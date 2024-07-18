@@ -1,0 +1,109 @@
+body{
+    background: linear-gradient(180deg, #ffc1c191 0%, #feffc1 100%);
+    min-height: 100vh;
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.container{
+    background-color: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 10px 100px;
+    border-radius: 30px;
+}
+
+.todo-list-title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.inner-wrapper{
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+    
+}
+
+.input-wrapper{
+    border-radius: 20px;
+    background: #EEEFF0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 424px;
+}
+
+.input-wrapper input{
+    background-color: transparent;
+    border: 0px;
+    flex: 1;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.inner-wrapper button{
+    background-color: #ecc5b2;
+    border: 0px;
+    color: white;
+    font-family:'Playfair Display', sans-serif;
+    font-size:14px;
+    padding: 10px 13px;
+    border-radius:20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.list{
+    list-style: none;
+    padding: 0px;
+}
+
+.list li{
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 5px;
+    position: relative;
+}
+
+.list li.checked{
+    text-decoration: line-through;
+}
+
+.list li::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('img/unchecked.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    vertical-align:middle;
+    margin-right :10px;
+}
+
+.list li.checked::before{
+    background-image: url('img/checked.svg');
+}
+
+.delete{
+    background-image: url('img/delete.svg');
+    border-radius: 25px;
+    padding: 5px;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top:0;
+    width: 20px;
+    height: 20px;
+}
+
+.delete:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
